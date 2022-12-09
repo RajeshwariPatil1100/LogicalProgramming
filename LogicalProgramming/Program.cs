@@ -15,21 +15,25 @@ namespace LogicalProgramming
             while (flag)
             {
                 Console.WriteLine("Logical Programming Problems");
-                Console.WriteLine("1.Fibonacci Series" + "\n" + "2.Exit");
+                Console.WriteLine("1.Fibonacci Series" + "\n" + "2.Perfect Number" + "\n" + "3.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
                     case 1:
-                        Console.WriteLine("Lets Create Fibonacci Series");
+
                         FibonacciSeries series = new FibonacciSeries();
                         series.Fibonacci();
+                        break;
+                    case 2:
+                        PerfectNumber num = new PerfectNumber();
+                        num.Perfect();
                         break;
                     default:
                         flag = false;
                         break;
+
+
                 }
-
-
             }
         }
     }
