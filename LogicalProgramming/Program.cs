@@ -15,7 +15,7 @@ namespace LogicalProgramming
             while (flag)
             {
                 Console.WriteLine("Logical Programming Problems");
-                Console.WriteLine("1.Fibonacci Series" + "\n" + "2.Perfect Number" + "\n" + "3.Exit");
+                Console.WriteLine("1.Fibonacci Series" + "\n" + "2.Perfect Number" + "\n" + "3.prime number" + "\n" + "4.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -28,11 +28,13 @@ namespace LogicalProgramming
                         PerfectNumber num = new PerfectNumber();
                         num.Perfect();
                         break;
+                    case 3:
+                        PrimeNumber number = new PrimeNumber();
+                        number.Prime();
+                        break;
                     default:
                         flag = false;
                         break;
-
-
                 }
             }
         }
